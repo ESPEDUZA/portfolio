@@ -6,13 +6,7 @@ const FrameOne = React.lazy(() => import("pages/FrameOne"));
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<NotFound />} />
-          <Route path="/frameone" element={<FrameOne />} />
-        </Routes>
-      </Router>
+     <FrameOne />
     </React.Suspense>
   );
 };
